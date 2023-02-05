@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container" id="header">
+            <div class="main-menu">
+                <div class="logo"><a href="#header"><img src="./assets/img/logo-bookmark.svg" alt="logo"></a></div>
+                <div class="menu-icon"><i class="fa-solid fa-bars" id="open-mb-menu"></i></div>
+                <div class="desktop-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#features">FEATURES</a></li>
+                            <li><a href="#">PRICING</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a class="login" href="#">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <div class="menu-header">
+                    <div class="logo"><a href="#header"><img src="./assets/img/logo-2.png" alt="logo"></a></div>
+                    <div><i class="fa-solid fa-xmark" id="close-mb-menu"></i></div>
+                </div>
+                <div class="menu-body">
+                    <nav>
+                        <ul>
+                            <li><a href="#features">FEATURES</a></li>
+                            <li><a href="#pricing">PRICING</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a class="login" href="#">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-footer">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+            </div>
+            <!-- /Mobile menu -->
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <div class="hero-img">
+                        <img src="./assets/img/illustration-hero.svg" alt="desktop-tab">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1 text-center text-md-start">
+                    <h1 class="pt-5">A Simple Bookmark Manager</h1>
+                    <p  class="lead">A clean and simple interface to organize your favourite website. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="btns mt-4">
+                        <a class="c_btn btn_blue" href="#">Get it on Chrome</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="c_btn btn_light" href="#">Get it on Firefox</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h2>features</h2>
+                    <p>our aim is to make it quick and eassy for you to access your favourite website. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
+            </div>
+            <div class="tab-menu  text-center">
+                <ul>
+                    <li><a class="key-1 c_active" href="javascript:void(0)">Simple Bookmarking</a></li>
+                    <li><a class="key-2" href="javascript:void(0)">Speedy Searching</a></li>
+                    <li><a class="key-3" href="javascript:void(0)">Easy Sharing</a></li>
+                </ul>
+            </div>
+            <div class="tabs text-md-start text-lg-start text-center">
+                <div class="tab-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tab-img">
+                                <img src="./assets/img/illustration-features-tab-1.svg" alt="desktop-tab">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="py-4">Bookmark in one click</h2>
+                                <p>Organize your bookmarks however you like. Our siple drag-and-drop interface gives you complete control over manage your favourite sites.</p>
+                                <a href="#" class="c_btn btn_blue">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tab-img">
+                                <img src="./assets/img/illustration-features-tab-2.svg" alt="desktop-tab">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="py-4">Intelligent search</h2>
+                                <p>Our powerful search feature will help you find saved sites in no time at all. no need to trawl through all of your bookmarks.</p>
+                                <a href="#" class="c_btn btn_blue">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tab-img">
+                                <img src="./assets/img/illustration-features-tab-3.svg" alt="desktop-tab">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="py-4">Share your bookmarks</h2>
+                                <p>Easily share your bookmarks and collections with others. Create a shareable link that can send at the click ao a button.</p>
+                                <a href="#" class="c_btn btn_blue">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <sectioon class="pricing" id="pricing">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="py-5">Download the extention</h2>
+                    <p>We've got more browsers in the pipeline. please do let us know if you've got a favourite you'd like to prioritize.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4">
+                    <div class="c_card chrome">
+                        <div>
+                            <img src="./assets/img/logo-chrome.svg" alt="chrome">
+                        </div>
+                        <div class="txt">
+                            <h4>Add to Chrome</h4>
+                            <p>Minimum version 62</p>
+                            <img src="./assets/img/bg-dots.svg" alt="dots">
+                        </div>
+                        <div>
+                            <a class="c_btn btn_blue mt-auto" href="#">Add & Install Extention</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="c_card firefox">
+                        <div>
+                            <img src="./assets/img/logo-firefox.svg" alt="firefox">
+                        </div>
+                        <div>
+                            <h4>Add to Firefox</h4>
+                            <p>Minimum version 55</p>
+                            <img src="./assets/img/bg-dots.svg" alt="dots">
+                        </div>
+                        <div>
+                            <a class="c_btn btn_blue mt-auto" href="#">Add & Install Extention</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="c_card opera">
+                        <div>
+                            <img src="./assets/img/logo-opera.svg" alt="opera">
+                        </div>
+                        <div>
+                            <h4>Add to Opera</h4>
+                            <p>Minimum version 46</p>
+                            <img src="./assets/img/bg-dots.svg" alt="dots">
+                        </div>
+                        <div>
+                            <a class="c_btn btn_blue mt-auto" href="#">Add & Install Extention</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </sectioon>
+
+    <section class="faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Here are some of our FAQ's. If you have anyother questions you'd answered please feel free to email us.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="ques">
+                        <h4>
+                            <a class="" data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              What is Bookmark? <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="faq1">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus ab odit cupiditate aliquid excepturi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ques">
+                        <h4>
+                            <a class="" data-bs-toggle="collapse" href="#faq2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              How can I request a new browser? <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="faq2">
+                            <p>
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum veniam nihil molestias necessitatibus odio numquam, labore officia obcaecati tempora vel inventore dolorem quo quasi pariatur perferendis quaerat laudantium maxime ab!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ques">
+                        <h4>
+                            <a class="" data-bs-toggle="collapse" href="#faq3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Is there a mobile app? <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="faq3">
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ques">
+                        <h4>
+                            <a class="" data-bs-toggle="collapse" href="#faq4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              What about other Chromium browsers? <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="faq4">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat sed est voluptatem distinctio, nisi ad, architecto perspiciatis nesciunt suscipit culpa, maiores iure. Mollitia aperiam incidunt nostrum necessitatibus quis eius itaque voluptatum sunt dignissimos velit?
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="c_btn btn_blue">More Info</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container text-center py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h6>35,000+ already joined.</h6>
+                    <h3>Stay up-to-date with that we're doing.</h3><br>
+                    <div class="con-form">
+                        <form action="#" class="">
+                            <input type="email" name="" id="" placeholder="Enter your email address">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-stsrt">
+                    <ul>
+                        <li><a href="3"><img src="./assets/img/logo-2.png" alt="bookmark logo"></a></li>
+                        <li><a href="3">FEATURES</a></li>
+                        <li><a href="3">PRICING</a></li>
+                        <li><a href="3">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-md-6 text-center text-md-end">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

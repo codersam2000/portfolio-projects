@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro</title>
+  <style>
+    #stop{display:none;}
+  </style>
+  <link rel="stylesheet" href="./fontawesome-6/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Pomodoro Timer</h1>
+    <div class="watch">
+      <div id="display">
+        30:00
+      </div>
+      <hr>
+      <div class="btns">
+        <span class="btn btn__start" id="start" onclick="start()"><i class="fa-regular fa-circle-play"></i></span>
+        <span class="btn btn__stop" id="stop" onclick="stop()"><i class="fa-regular fa-circle-stop"></i></span>
+        <span class="btn btn__reset" id="reset" onclick="reset()"><i class="fa-solid fa-rotate-left"></i></span>
+        <span class="btn btn__setting" id="setting" onclick="setting()"><i class="fa-solid fa-gear"></i></span>
+      </div>
+    </div>
+    <div class="settings">
+      <div id="fields">
+        <input type="number" id="setMin" value="30" min="0" max="59">
+        <input type="number" id="setSec" value="00" min="0" max="59">
+      </div>
+      <hr>
+      <div class="btns">
+        <span class="btn btn__set" id="set" onclick="set()">Set</span>
+      </div>
+    </div>
+  <script src="./script.js"></script>
+</body>
+</html>

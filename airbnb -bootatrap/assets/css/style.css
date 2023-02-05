@@ -1,0 +1,360 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+p{
+	color: #8B8C8C;
+	font-family: sans-serif;
+}
+section{
+	padding: 70px 0;
+}
+.text-center{
+	text-align: center;
+}
+.text-14{
+	color: #8B8C8C;
+	font-family: sans-serif;
+	font-size: 14px;
+	word-spacing: 2px;
+}
+
+.hero-btn{
+	background: #094b72;
+	border: navajowhite;
+	font-size: 14px;
+	font-family: sans-serif;
+	display: inline-block;
+	color: #fff;
+	padding: 15px 24px;
+	border-radius: 3px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 20px 0;
+}
+
+.form-control{
+	width: 100%;
+	margin: 2px 1px;
+	padding: 4px;
+	border:1px solid rgb(133, 133, 133);
+	border-radius: 2px;
+}
+/* main menubar */
+.main-menu .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+.main-menu .logo{
+	margin-top: 11px;
+	cursor: pointer;
+}
+.bars-and-serch-icon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menubar_icon{
+	cursor: pointer;
+}
+#main-nav-menu{
+	position: absolute;
+	height: 100vh;
+	width: 250px;
+	background-color: rgb(14, 13, 13);
+	left: -250px;
+	top: 0px;
+	transition: .5s;
+	z-index: 10;
+}
+input[type=checkbox]#checkbar:checked~#main-nav-menu{
+     left: 0;
+}
+input[type=checkbox]#checkbar,input[type=checkbox]#checkserach{
+	display: none;
+}
+.main-nav-menu ul li{
+	border-bottom: 1px solid rgb(48, 48, 48);
+	padding: 10px 20px;
+}
+.main-nav-menu ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search-field{
+	position: absolute;
+	display: block;
+	width: 250px;
+	border-radius: 4px;
+	height: 50px;
+	padding: 10px;
+	order: 4;
+	top: -60px;
+	right: 10px;
+	background: rgb(214, 214, 214);
+	transition: .5s;
+	z-index: 10;
+}
+
+.search-field::after {
+	position: absolute;
+	content: "";
+	height: 10px;
+	width: 10px;
+	background: rgb(214, 214, 214);
+	rotate: calc(45deg);
+	top: -5px;
+	right: 20px;
+  }
+.search-field input[type=search]{
+	width: 100%;
+	padding: 5px;
+}
+.checkserach_icon{
+	cursor: pointer;
+}
+input[type=checkbox]#checkserach:checked~.search-field{
+	top:60px;
+}
+
+/* hero */
+.hero{
+	padding-left: 30px;
+}
+.hero .hero-title{
+
+	color: #094b72;
+	font-size: 40px;
+	position: relative;
+	z-index: 2;
+}
+.hero .hero-stitle{
+	color: #4F4F4F;
+	font-size: 13px;
+	font-family: sans-serif;
+	line-height: 33px;
+	letter-spacing: 0.5px;
+	margin: 40px 0;
+}
+.hero table img{
+    padding: 10px 40px 10px 0;
+}
+
+
+.services{
+	background: #F2FCFF;
+}
+.services h2{
+	font-size: 48px;
+}
+.services .service-des{
+	font-size: 20px;
+	font-family: Poppins, sans-serif;
+	word-spacing: 5px;
+	margin-right: 4px;
+}
+
+.card{
+	background: #fff;
+	padding: 19px;
+	border-radius: 4px;
+	margin: 15px;
+	box-sizing: border-box;
+}
+.card p{
+	font-size: 11px;
+}
+
+.counter{
+	background-image: url('../img/bg.svg');
+	padding: 10px 0;
+}
+.counter h2{
+	font-family: 'Playfair Display';
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	letter-spacing: 0.005em;
+	font-feature-settings: 'salt' on, 'liga' off;
+	color: #FFFFFF;
+}
+.sub-t{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font-feature-settings: 'salt' on, 'liga' off;
+	color: #FFFFFF;
+}
+
+.counter .contex div{position: relative;}
+.counter .contex div:nth-child(2)::before{
+content: "";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	height: 90%;
+	width: 2px;
+	background:  #05526ade;
+}
+.counter .contex div:nth-child(2)::after{
+content: "";
+	position: absolute;
+	top: 0;
+	right: 10px;
+	height: 90%;
+	width: 2px;
+	background:  #05526ade;
+}
+
+.counter .c-num{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 64px;
+
+	text-align: center;
+	font-feature-settings: 'salt' on, 'liga' off;
+
+
+	color: #FFFFFF;
+}
+.counter p{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 0.3px;
+	font-feature-settings: 'salt' on, 'liga' off;
+	color: #FFFFFF;
+}
+
+
+.testimonial{
+	background: #F4FBFF;
+}
+
+footer{
+	padding: 70px 0 0 0;
+	background: #0F6E8C;
+}
+footer h4{
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+footer ul li{
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+}
+.copyright{
+	background: #05546D;
+	padding: 10px;
+	color: #D9DBE1;
+}
+.container img{
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-width:480px){
+	.hero{
+		background-image: url('../img/hero.png');
+		background-repeat: no-repeat;
+		background-position:bottom right;
+		background-size: 400px;
+		padding-left: 30px;
+	}
+	.hero .hero-title{
+		font-size: 50px;
+	}
+	.hero .hero-stitle{
+		font-size: 16px;
+	}
+}
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (min-width:768px){
+	.logo{
+		order: 1;
+	} 
+	.bars-and-serch-icon{
+		order: 3;
+	}
+	.menubar_icon{
+		display: none;
+	}
+	.serach-field{
+		order: 4;
+	}
+	#main-nav-menu{
+		position: static;
+		padding: 0;
+		height: auto;
+		width: auto;
+		background: none;
+		order: 2;
+		margin-left: auto;
+	}
+	.main-nav-menu ul{
+		display: flex;
+		gap:10px;
+	}
+	.main-nav-menu ul li{
+		border: none;
+		padding: 0;
+	}
+	.main-nav-menu ul li a{
+		color: rgb(22, 22, 22);
+		font-size: 13px;
+	}
+
+	.hero{
+		padding-left:50px ;
+		background-position:bottom right 150px;
+		background-size: 420px;
+	}
+	.hero .hero-title{
+		font-size: 60px;
+	}
+}
+@media screen and(min-width:810px){
+	.hero{
+		padding-left:50px ;
+		background-position:bottom right 150px;
+		background-size: 450px;
+	}
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width:1025px){
+	.hero{
+		background-position:bottom 0 left 650px;
+		background-size: 460px;
+	}
+	.hero .hero-title{
+		font-size: 90px;
+	}
+}
